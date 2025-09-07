@@ -53,7 +53,7 @@ W aplikacji zaimplementowana jest autoryzacja i autentykacja użytkowników.
 
 #### Obszar automatyzacji
 
-Obszar służy do obsługi wszystkich zleceń użytkownika, umożliwia dynamiraportuczne tworzenie spoke<->workspace użytkownika, przetwarzanie i organizacje przebiegu zadań oraz raportowanie zdarzeń użytkownikowi.
+Obszar służy do obsługi wszystkich zleceń użytkownika, umożliwia dynamiczne tworzenie spoke<->workspace użytkownika, przetwarzanie i organizacje przebiegu zadań oraz raportowanie zdarzeń użytkownikowi.
 
 Jest to również obszar zapewniający komunikację z obszarem użytkownika za pomocą kolejki a także częściowo workspacem (orchestrator).
 

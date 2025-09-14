@@ -1,17 +1,27 @@
 interface WorkspacePG {
-  id: string; // PK, UUID
-  name: string;
+	id: string; // PK, UUID
+	name: string;
 
-  user_id: string; // FK
+	user_id: string; // FK
 }
 
 interface WorkspaceMG {
-  _id: string; // Mongo internal
-  name: string; // name for infra resources, consist of name from PG & some generated postfix
-  pg_id: string; // "FK" from PG
-  vm_ip_addr: string;
-  vm_azure_domain: string;
-  vm_ssh_key: string;
+	_id: string; // Mongo internal
+	name: string; // name for infra resources, consist of name from PG & some generated postfix
+	pg_id: string; // "FK" from PG
+	vm_ip_addr: string;
+	vm_azure_domain: string;
+	vm_ssh_key: string;
 }
 
 // DTOs
+interface CreateWorkspaceDto {
+	user_id: string;
+	workspace_id: string;
+	workspace_name: string;
+}
+
+interface CreateAgentDto {
+	workspace_id: string;
+	name: string;
+}

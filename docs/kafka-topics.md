@@ -13,7 +13,7 @@ graph TD;
     Backend<-->Automation;
     Backend<-->JobScheduler;
     Orchestrator-->Backend;
-    JobScheduler-- ? -->Orchestrator;
+    JobScheduler-- REST -->Orchestrator;
     Automation-->JobScheduler
 ```
 
@@ -38,7 +38,17 @@ Info about workspace/agents status from job scheduler healthchecks
 Tasks logs
 
 ### Job scheduler -> Orchestrator
-Healthchecks
+Healthchecks (REST)
 
 
 ## Topics
+
+- INFRA_AUTOMATION
+- INFRA_AUTOMATION_RESPONSE
+- INFRA_AUTOMATION_ERROR
+- INFRA_AUTOMATION_LOGS
+- TASK_SCHEDULE
+- TASK_SCHEDULE_RESPONSE
+- TASK_SCHEDULE_ERROR
+- WORKSPACE_HEALTH
+- WORKSPACE_LOGS

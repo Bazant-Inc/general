@@ -5,6 +5,7 @@ interface Agent {
     hostname: string; // from device
     name: string; // given by the user, the same as given when registering device to headscale
     is_connected: boolean;
+    is_registered: boolean;
 }
 
 interface AgentMG {

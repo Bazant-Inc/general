@@ -29,7 +29,6 @@ export type ActionHistoryPayload = Array<{
 // ActionMessage parsed from SSE data
 export type ActionMessage = SSEBaseMessage & {
   type: ActionType;
-  milestoneLabel: string;
   message: string;
   status: MilestoneStatus;
 };
